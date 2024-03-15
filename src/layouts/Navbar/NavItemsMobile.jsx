@@ -2,9 +2,12 @@
 import Link from 'next/link';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const NavItemsMobile = ({ navItems }) => {
   const [isOpen, setOpen] = useState(false);
+  const pathname = usePathname();
+
   return (
     <div className='block lg:hidden'>
       <Hamburger
@@ -21,10 +24,12 @@ const NavItemsMobile = ({ navItems }) => {
         {navItems.map((navItem, index) => (
           <li key={index}>
             <Link
-              className='text-lg lg:text-xl text-secondary hover:text-primary duration-200'
-              href={navItem.link}
+              className={`text-lg lg:text-xl ${
+                pathname === navItem.href ? 'text-primary' : 'text-secondary'
+              } hover:text-primary duration-200`}
+              href={navItem.href}
             >
-              {navItem?.item}
+              {navItem?.name}
             </Link>
           </li>
         ))}

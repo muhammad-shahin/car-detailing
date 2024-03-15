@@ -1,22 +1,22 @@
 [
   {
-    "item": "Home",
-    "link": "/"
+    "name": "Home",
+    "href": "/"
   },
   {
-    "item": "Services",
-    "link": "/services"
+    "name": "Services",
+    "href": "/services"
   },
   {
-    "item": "About",
-    "link": "/about"
+    "name": "About",
+    "href": "/about"
   },
   {
-    "item": "Contact",
-    "link": "/contact"
+    "name": "Contact",
+    "href": "/contact"
   },
   {
-    "item": "Blog",
-    "link": "/blog"
+    "name": "Blog",
+    "href": "/blog"
   }
 ]
