@@ -1,0 +1,7 @@
+.input-field {
+  @apply bg-white border-none outline-none rounded-lg text-lg p-3 w-full;
+}
+select {
+  cursor: pointer;
+  appearance: none;
+}

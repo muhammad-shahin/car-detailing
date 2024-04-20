@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '@/assets/images/arlington-car-detail.png';
+import logo from '/public/images/arlington-car-detail.png';
 import { MdCall } from 'react-icons/md';
 import navItems from '@/db/navItems.json';
 import NavItemsMobile from './NavItemsMobile';
@@ -11,9 +11,9 @@ const Navbar = () => {
     <nav className='w-full'>
       {/* top nav */}
       <div className='py-1 bg-secondary'>
-        <h6 className='text-white text-center text-sm px-4'>
+        <p className='text-white text-center text-sm px-4'>
           Car Detailing Services for Arlington, TX and Nearby Areas
-        </h6>
+        </p>
       </div>
 
       {/* main nav */}

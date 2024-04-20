@@ -1,9 +1,7 @@
-import { Inter } from 'next/font/google';
-import './globals.css';
+import '../assets/css/style.css';
 import Footer from '@/layouts/Footer';
 import Navbar from '@/layouts/Navbar/Navbar';
-
-const inter = Inter({ subsets: ['latin'] });
+import { antonFont, interFont } from './font/font';
 
 export const metadata = {
   title: 'Car Detailing Arlington, TX',
@@ -14,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${antonFont.variable} ${interFont.variable}`}>
         <Navbar />
         {children}
         <Footer />

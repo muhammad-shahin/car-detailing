@@ -1,0 +1,3 @@
+.heading-96 {
+  @apply text-5xl xl:text-8xl lg:text-6xl leading-tight;
+}

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('./header.css');
+@import url('./reset.css');
+@import url('./typography.css');
+@import url('./form.css');
+@import url('./common.css');
+
 html,
 body {
   margin: 0;
