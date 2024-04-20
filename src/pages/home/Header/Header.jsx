@@ -1,7 +1,7 @@
-import Button from '../common/Button';
-import Input from '../common/Input';
-import SelectOption from '../common/SelectOption';
-import Textarea from '../common/textarea';
+import Button from '../../../components/common/Button';
+import Input from '../../../components/common/Input';
+import SelectOption from '../../../components/common/SelectOption';
+import Textarea from '../../../components/common/textarea';
 
 const Header = () => {
   return (

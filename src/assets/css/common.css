@@ -10,8 +10,17 @@
 }
 /* buttons styles end */
 
-/* container styles start */
+/* container & section styles start */
 .container-box {
   @apply container mx-auto px-3 lg:px-5 xl:px-7;
 }
-/* container styles end */
+.section-gap {
+  @apply py-[60px] lg:py-[80px] xl:py-[100px];
+}
+.section-gap-top {
+  @apply pt-[60px] lg:pt-[80px] xl:pt-[100px];
+}
+.section-gap-bottom {
+  @apply pb-[60px] lg:pb-[80px] xl:pb-[100px];
+}
+/* container & section styles end */
