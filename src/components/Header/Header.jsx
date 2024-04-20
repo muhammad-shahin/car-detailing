@@ -1,3 +1,8 @@
+import Button from '../common/Button';
+import Input from '../common/Input';
+import SelectOption from '../common/SelectOption';
+import Textarea from '../common/textarea';
+
 const Header = () => {
   return (
     <header className='home-header'>
@@ -15,43 +20,54 @@ const Header = () => {
               voluptatum.
             </p>
             <div className='btn-group'>
-              <button className='primary-btn'>Book Now</button>
-              <button className='secondary-btn'>View Services</button>
+              <Button
+                className='primary-btn'
+                href='/'
+                text={'Book Now'}
+              ></Button>
+              <Button
+                className='secondary-btn'
+                href={'All Services'}
+              >
+                View Services
+              </Button>
             </div>
           </div>
 
           {/* right side */}
           <div className='w-1/3'>
             <form className='bg-secondary rounded-xl xl:p-8 p-6 flex flex-col gap-5'>
-              <input
-                className='input-field'
+              <Input
+                className=''
                 name='full_name'
                 type='text'
                 placeholder='Full Name'
               />
-              <input
+              <Input
                 className='input-field'
                 name='email'
                 type='email'
                 placeholder='Email'
               />
-              <select
+              <SelectOption
                 name='service'
                 className='input-field'
-              >
-                <option value='Interior Detailing'>Interior Detailing</option>
-                <option value='Exterior Detailing'>Exterior Detailing</option>
-                <option value='Complete Detailing'>Complete Detailing</option>
-                <option value='Window Tinting'>Window Tinting</option>
-                <option value='Ceramic Coating'>Ceramic Coating</option>
-              </select>
-              <textarea
+                defaultOption={'Select Service'}
+                options={[
+                  'Interior Detailing',
+                  'Exterior Detailing',
+                  'Complete Detailing',
+                  'Window Tinting',
+                  'Ceramic Coating',
+                ]}
+              ></SelectOption>
+              <Textarea
                 className='input-field'
                 name='message'
                 placeholder='Tell us more about your detailing...'
                 cols='30'
                 rows='5'
-              ></textarea>
+              ></Textarea>
             </form>
           </div>
         </div>

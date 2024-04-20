@@ -1,9 +1,11 @@
+/* buttons styles start */
 .primary-btn {
-  @apply min-w-36 bg-primary border lg:border-2 border-primary rounded-lg text-white text-center text-lg px-6 lg:px-8 py-3 lg:py-4 hover:bg-primaryLight  duration-200;
+  @apply min-w-36 bg-primary border lg:border-2 border-primary rounded-lg text-white text-center text-lg px-6 lg:px-8 py-3 lg:py-4 hover:bg-primaryLight hover:border-primaryLight  duration-200;
 }
 .secondary-btn {
-  @apply min-w-36 bg-secondary border lg:border-2 border-secondary rounded-lg text-white text-center text-lg px-6 lg:px-8 py-3 lg:py-4 hover:bg-secondaryLight duration-200;
+  @apply min-w-36 bg-secondary border lg:border-2 border-secondary rounded-lg text-white text-center text-lg px-6 lg:px-8 py-3 lg:py-4 hover:bg-secondaryLight hover:border-secondaryLight duration-200;
 }
 .btn-group {
   @apply flex items-center gap-6 pt-6;
 }
+/* buttons styles end */
