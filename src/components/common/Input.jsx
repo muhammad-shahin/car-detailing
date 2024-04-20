@@ -1,4 +1,11 @@
-const Input = ({ type = 'text', name, id, className, placeholder }) => {
+const Input = ({
+  type = 'text',
+  name,
+  id,
+  className,
+  placeholder,
+  required = false,
+}) => {
   return (
     <div>
       <input
@@ -7,6 +14,7 @@ const Input = ({ type = 'text', name, id, className, placeholder }) => {
         name={name}
         className={`input-field ${className}`}
         placeholder={placeholder}
+        required={required}
       />
     </div>
   );

@@ -6,6 +6,7 @@ const Textarea = ({
   placeholder,
   cols,
   rows,
+  required = false,
 }) => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Textarea = ({
         name={name}
         className={`input-field ${className}`}
         placeholder={placeholder}
+        required={required}
         cols={cols}
         rows={rows}
       ></textarea>
