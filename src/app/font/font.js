@@ -3,7 +3,7 @@ import { Anton, Inter } from 'next/font/google';
 export const antonFont = Anton({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['400'],
+  weight: '400',
   variable: '--anton-font',
 });
 
