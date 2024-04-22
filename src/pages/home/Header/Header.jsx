@@ -45,19 +45,26 @@ const Header = () => {
                 name='full_name'
                 type='text'
                 placeholder='Full Name'
+                label='Full Name'
+                required={true}
               />
               <Input
                 name='email'
                 type='email'
                 placeholder='Email'
+                label='Email'
               />
               <Input
                 name='phone'
                 type='phone'
                 placeholder='Phone'
+                label='Phone Number'
+                required={true}
               />
               <SelectOption
                 name='service'
+                label='Select Service'
+                required={true}
                 defaultOption={'Select Service'}
                 options={[
                   'Interior Detailing',
@@ -65,11 +72,14 @@ const Header = () => {
                   'Complete Detailing',
                   'Window Tinting',
                   'Ceramic Coating',
+                  'Other',
                 ]}
               ></SelectOption>
               <Textarea
                 name='message'
                 placeholder='Tell us more about your detailing...'
+                label='Leave a Message'
+                defaultOption={'Select Service'}
                 cols='30'
                 rows='5'
               ></Textarea>

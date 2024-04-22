@@ -11,7 +11,7 @@ const Input = ({
     <div>
       {label && (
         <label
-          htmlFor={id}
+          htmlFor={id ? id : name}
           className='block text-base capitalize text-neutral3 font-medium pb-3'
         >
           {label} {required && <span className='text-primary'>*</span>}
@@ -20,7 +20,7 @@ const Input = ({
 
       <input
         type={type}
-        id={id}
+        id={id ? id : name}
         name={name}
         className={`input-field ${className}`}
         placeholder={placeholder}

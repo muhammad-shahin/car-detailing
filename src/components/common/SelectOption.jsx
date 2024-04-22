@@ -11,37 +11,46 @@ const SelectOption = ({
   defaultOption,
   options = [],
   required = false,
+  label,
 }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   return (
-    <div
-      className='relative'
-      onClick={() => setIsCollapsed(!isCollapsed)}
-    >
-      <select
-        type={type}
-        id={id}
-        name={name}
-        required={required}
-        className={`input-field ${className}`}
-      >
-        <option value={defaultOption}>{defaultOption}</option>
-        {options.map((option, index) => (
-          <option
-            key={option + index}
-            value={option}
-          >
-            {option}
-          </option>
-        ))}
-      </select>
-      <Image
-        src={arrowIcon}
-        alt='Arrow Icon'
-        className={`absolute top-1/2 right-[20px] -translate-y-1/2 ${
-          isCollapsed ? '-rotate-90' : 'rotate-90'
-        } duration-200`}
-      />
+    <div onClick={() => setIsCollapsed(!isCollapsed)}>
+      {label && (
+        <label
+          htmlFor={id ? id : name}
+          className='block text-base capitalize text-neutral3 font-medium pb-3'
+        >
+          {label} {required && <span className='text-primary'>*</span>}
+        </label>
+      )}
+
+      <div className='relative'>
+        <select
+          type={type}
+          id={id}
+          name={name}
+          required={required}
+          className={`input-field ${className}`}
+        >
+          <option value={defaultOption}>{defaultOption}</option>
+          {options.map((option, index) => (
+            <option
+              key={option + index}
+              value={option}
+            >
+              {option}
+            </option>
+          ))}
+        </select>
+        <Image
+          src={arrowIcon}
+          alt='Arrow Icon'
+          className={`absolute top-1/2 right-[20px] -translate-y-1/2 cursor-auto ${
+            isCollapsed ? '-rotate-90' : 'rotate-90'
+          } duration-200`}
+        />
+      </div>
     </div>
   );
 };
