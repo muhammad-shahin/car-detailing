@@ -22,9 +22,9 @@ const CustomRadioGroup = ({
             <input
               type={'radio'}
               name={type.name}
-              className={` ${className}`}
+              className={`${className}`}
               value={type.value}
-              // checked={type.checked}
+              
               id={type.id}
               required={required}
             />

@@ -8,6 +8,8 @@ import sportCar from '@/assets/icons/sport-car.svg';
 import suvCar from '@/assets/icons/suv-car.svg';
 import truckCar from '@/assets/icons/truck-car.svg';
 import vanCar from '@/assets/icons/van-car.svg';
+import aircraft from '@/assets/icons/aircraft.svg';
+import boat from '@/assets/icons/boat.svg';
 
 export {
   sedanCar,
@@ -20,4 +22,6 @@ export {
   suvCar,
   truckCar,
   vanCar,
+  aircraft,
+  boat,
 };
