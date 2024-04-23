@@ -15,17 +15,21 @@ const SelectOption = ({
 }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   return (
-    <div onClick={() => setIsCollapsed(!isCollapsed)}>
+    <div>
       {label && (
         <label
           htmlFor={id ? id : name}
-          className='block text-base capitalize text-neutral3 font-medium pb-3'
+          className='input-label'
         >
           {label} {required && <span className='text-primary'>*</span>}
         </label>
       )}
 
-      <div className='relative'>
+      <div
+        className='relative'
+        onClick={() => setIsCollapsed(!isCollapsed)}
+        onBlur={() => setIsCollapsed(!isCollapsed)}
+      >
         <select
           type={type}
           id={id}

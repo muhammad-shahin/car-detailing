@@ -2,11 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('./common.css');
 @import url('./header.css');
 @import url('./reset.css');
 @import url('./typography.css');
 @import url('./form.css');
-@import url('./common.css');
+
+:root {
+  --primary: theme(colors.primary);
+  --primaryLight: theme(colors.primaryLight);
+  --secondary: theme(colors.secondary);
+  --secondaryLight: theme(colors.secondaryLight);
+  --neutral1: theme(colors.neutral1);
+  --neutral2: theme(colors.neutral2);
+  --neutral3: theme(colors.neutral3);
+  --neutral4: theme(colors.neutral4);
+  --neutral5: theme(colors.neutral5);
+  --neutral6: theme(colors.neutral6);
+  --neutral7: theme(colors.neutral7);
+  --warning: theme(colors.warning);
+  --slate: theme(colors.slate);
+  --gray: theme(colors.gray);
+}
 
 html,
 body {
@@ -15,12 +32,15 @@ body {
   box-sizing: border-box;
 }
 
-.primary-btn {
-  @apply px-3 py-2 lg:px-5 lg:py-3 bg-primary rounded-lg border-2 text-white  text-sm md:text-lg xl:text-xl flex justify-center items-center gap-2 xl:gap-3;
-}
-
 @media (min-width: 1024px) {
   .hidden-on-lg {
     display: flex !important;
   }
+}
+
+.primary-btn {
+  @apply bg-primary;
+}
+.secondary-btn {
+  @apply bg-secondary;
 }

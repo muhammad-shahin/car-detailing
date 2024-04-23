@@ -12,7 +12,7 @@ const Input = ({
       {label && (
         <label
           htmlFor={id ? id : name}
-          className='block text-base capitalize text-neutral3 font-medium pb-3'
+          className='input-label'
         >
           {label} {required && <span className='text-primary'>*</span>}
         </label>

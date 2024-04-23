@@ -26,7 +26,7 @@ const Header = () => {
                 text={'Book Now'}
               ></Button>
               <Button
-                className='secondary-btn bg-secondary'
+                className='secondary-btn'
                 href={'/'}
                 text={'All Services'}
               >
