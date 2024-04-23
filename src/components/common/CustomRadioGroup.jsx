@@ -24,7 +24,6 @@ const CustomRadioGroup = ({
               name={type.name}
               className={`${className}`}
               value={type.value}
-              
               id={type.id}
               required={required}
             />
