@@ -1,7 +1,5 @@
 import Button from '../../../components/common/Button';
-import Input from '../../../components/common/Input';
-import SelectOption from '../../../components/common/SelectOption';
-import Textarea from '../../../components/common/textarea';
+import BookingForm from './BookingForm';
 
 const Header = () => {
   return (
@@ -37,58 +35,7 @@ const Header = () => {
 
           {/* right side */}
           <div className='lg:w-1/3'>
-            <form className='bg-secondary rounded-xl xl:p-8 p-6 flex flex-col gap-5'>
-              <h3 className='heading-3 text-primary text-center pb-2'>
-                Book Now to get Discount!
-              </h3>
-              <Input
-                name='full_name'
-                type='text'
-                placeholder='Full Name'
-                label='Full Name'
-                required={true}
-              />
-              <Input
-                name='email'
-                type='email'
-                placeholder='Email'
-                label='Email'
-              />
-              <Input
-                name='phone'
-                type='phone'
-                placeholder='Phone'
-                label='Phone Number'
-                required={true}
-              />
-              <SelectOption
-                name='service'
-                label='Select Service'
-                required={true}
-                defaultOption={'Select Service'}
-                options={[
-                  'Interior Detailing',
-                  'Exterior Detailing',
-                  'Complete Detailing',
-                  'Window Tinting',
-                  'Ceramic Coating',
-                  'Other',
-                ]}
-              ></SelectOption>
-              <Textarea
-                name='message'
-                placeholder='Tell us more about your detailing...'
-                label='Leave a Message'
-                defaultOption={'Select Service'}
-                cols='30'
-                rows='5'
-              ></Textarea>
-              <Button
-                text={'Book Now'}
-                type='submit'
-                className={'primary-btn w-full'}
-              />
-            </form>
+            <BookingForm />
           </div>
         </div>
       </div>

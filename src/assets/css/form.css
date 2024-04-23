@@ -11,64 +11,28 @@ select {
 /* radio button */
 .radio-button {
   padding-bottom: 16px;
-  span {
-    padding-top: 8px;
-  }
 }
 
 .radio-button > input[type='radio'] {
   display: none;
 }
+.custom-radio-button > input[type='radio'] {
+  display: none;
+}
 
-.radio-button > label {
-  position: relative;
-  color: var(--neutral6);
+.custom-radio-button > label {
+  @apply cursor-pointer;
+}
+
+.custom-radio-button > input[type='radio']:checked + label:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
   width: 100%;
-  border-radius: 16rem;
-  border: 1px solid var(--secondary);
-  outline: none;
-  padding: 10px 48px;
-  cursor: pointer;
-
-  @media (min-width: 768px) {
-    padding: 14px 58px;
-  }
-
-  @media (min-width: 768px) {
-    padding: 20px 60px;
-  }
-}
-
-.radio-button > label:before {
-  position: absolute;
-  content: '';
-  width: 20px;
-  height: 20px;
+  height: 100%;
   border: 2px solid var(--primary);
-  border-radius: 50%;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  /* @include desktop {
-    width: 30px;
-    height: 30px;
-    left: 20px;
-  } */
-}
-
-.radio-button > input[type='radio']:checked + label:after {
-  position: absolute;
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: var(--primary);
-  border-radius: 50%;
-  top: 50%;
-  left: 25px;
-  transform: translateY(-50%);
-  /* @include desktop {
-    width: 20px;
-    height: 20px;
-    left: 25px;
-  } */
+  border-radius: 8px;
+  background-color: transparent;
+  top: 0;
+  left: 0;
 }
