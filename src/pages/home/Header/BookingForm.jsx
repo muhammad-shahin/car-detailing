@@ -104,32 +104,11 @@ const BookingForm = () => {
         label='Car Type'
         groupItems={carType}
       />
-
-      <Input
-        name='full_name'
-        type='text'
-        placeholder='Full Name'
-        label='Full Name'
-        required={true}
-      />
-      <Input
-        name='email'
-        type='email'
-        placeholder='Email'
-        label='Email'
-      />
-      <Input
-        name='phone'
-        type='phone'
-        placeholder='Phone'
-        label='Phone Number'
-        required={true}
-      />
       <SelectOption
         name='service'
         label='Select Service'
         required={true}
-        defaultOption={'Select Service'}
+        defaultOption={'-- Select Service --'}
         options={[
           'Interior Detailing',
           'Exterior Detailing',
@@ -139,14 +118,29 @@ const BookingForm = () => {
           'Other',
         ]}
       ></SelectOption>
-      <Textarea
+      <Input
+        name='full_name'
+        type='text'
+        placeholder='Name'
+        label='Full Name'
+        required={true}
+      />
+      <Input
+        name='phone'
+        type='phone'
+        placeholder='Phone'
+        label='Phone Number'
+        required={true}
+      />
+
+      {/* <Textarea
         name='message'
         placeholder='Tell us more about your detailing...'
         label='Leave a Message'
         defaultOption={'Select Service'}
         cols='30'
         rows='5'
-      ></Textarea>
+      ></Textarea> */}
       <Button
         text={'Book Now'}
         type='submit'
