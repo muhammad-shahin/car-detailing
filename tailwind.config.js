@@ -7,6 +7,7 @@ module.exports = {
 
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
+    // './node_modules/keep-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     screens: {
@@ -24,7 +25,6 @@ module.exports = {
       primaryLight: '#ff8400ee',
       secondary: '#004540',
       secondaryLight: '#004540cf',
-      warning: '#fcb003',
       neutral1: '#faf9f5',
       neutral2: '#efede3',
       neutral3: '#e8e9e9',
@@ -39,5 +39,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  presets: [require('keep-react/preset')],
+  // presets: [require('keep-react/preset')],
 };
