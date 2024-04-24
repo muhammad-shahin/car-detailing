@@ -7,11 +7,11 @@
 select {
   @apply cursor-pointer appearance-none;
 }
+select > option {
+  @apply bg-primary text-white;
+}
 
 /* radio button */
-.radio-button {
-  padding-bottom: 16px;
-}
 
 .radio-button > input[type='radio'] {
   display: none;

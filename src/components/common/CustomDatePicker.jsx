@@ -1,43 +1,55 @@
 'use client';
-import { format } from 'date-fns';
 import { useState } from 'react';
-import { Calendar } from 'phosphor-react';
-import { Button, DatePicker, Popover } from 'keep-react';
+import { format } from 'date-fns';
+import { DayPicker } from 'react-day-picker';
+import 'react-day-picker/dist/style.css';
+import { SlCalender } from 'react-icons/sl';
+import Input from './Input';
 
-export const DatePickerComponent = () => {
-  const [date, setDate] = useState(null);
+const CustomDatePicker = ({ name, label, required = true }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState();
+
+  const handleSelect = (selectedDate) => {
+    setSelected(selectedDate);
+    setIsOpen(false);
+  };
+
+  let selectedDate = '-- Select Date --';
+  if (selected) {
+    selectedDate = format(selected, 'PP');
+  }
+
   return (
-    <div>
-      <Popover
-        showArrow={false}
-        placement='bottom-start'
-      >
-        <Popover.Action asChild>
-          <Button
-            className='w-[286px] justify-start gap-2 rounded-xl border border-metal-50 px-4 text-left text-body-4 font-normal hover:bg-white active:focus:scale-100'
-            variant='outline'
-            color='secondary'
-          >
-            <Calendar
-              size={20}
-              color='#AFBACA'
-            />
-            {date ? (
-              format(date ?? new Date(), 'PPP')
-            ) : (
-              <span>Select Your Date</span>
-            )}
-          </Button>
-        </Popover.Action>
-        <Popover.Content className='z-50 max-w-min'>
-          <DatePicker
-            mode='single'
-            selected={date}
-            onSelect={setDate}
-            showOutsideDays={true}
-          />
-        </Popover.Content>
-      </Popover>
+    <div className='relative cursor-pointer'>
+      <Input
+        className='placeholder:text-black cursor-pointer'
+        name='serviceBookingDate'
+        id='serviceBookingDate'
+        label={label}
+        value={selectedDate}
+        readOnly={true}
+        placeholder={'-- Select Date --'}
+        required={true}
+        handleOnClick={() => setIsOpen(!isOpen)}
+        // handleOnBlur={handleSelect}
+      />
+
+      <DayPicker
+        className={`bg-white m-0 p-3 rounded-lg absolute z-30 top-12 left-[40%] -translate-x-[40%] ${
+          isOpen ? 'scale-100' : 'scale-0'
+        } origin-top duration-300`}
+        mode='single'
+        selected={selected}
+        onSelect={handleSelect}
+      />
+
+      <SlCalender
+        onClick={() => setIsOpen(!isOpen)}
+        className='absolute top-[75%] right-4 -translate-y-[75%] text-xl cursor-auto'
+      />
     </div>
   );
 };
+
+export default CustomDatePicker;

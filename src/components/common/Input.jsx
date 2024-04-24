@@ -6,6 +6,10 @@ const Input = ({
   placeholder,
   required = false,
   label,
+  readOnly = false,
+  value,
+  handleOnClick,
+  handleOnBlur,
 }) => {
   return (
     <div>
@@ -18,14 +22,20 @@ const Input = ({
         </label>
       )}
 
-      <input
-        type={type}
-        id={id ? id : name}
-        name={name}
-        className={`input-field ${className}`}
-        placeholder={placeholder}
-        required={required}
-      />
+      <div className='relative'>
+        <input
+          type={type}
+          id={id ? id : name}
+          name={name}
+          className={`input-field ${className}`}
+          placeholder={placeholder}
+          required={required}
+          readOnly={readOnly}
+          value={value}
+          onClick={handleOnClick}
+          onBlur={handleOnBlur}
+        />
+      </div>
     </div>
   );
 };

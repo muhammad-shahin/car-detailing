@@ -7,7 +7,6 @@ module.exports = {
 
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
-    // './node_modules/keep-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     screens: {
@@ -39,5 +38,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  // presets: [require('keep-react/preset')],
 };

@@ -17,6 +17,7 @@ import {
   truckCar,
   vanCar,
 } from '@/assets/icons/index';
+import CustomDatePicker from '@/components/common/CustomDatePicker';
 
 const BookingForm = () => {
   const carType = [
@@ -118,6 +119,7 @@ const BookingForm = () => {
           'Other',
         ]}
       ></SelectOption>
+      <CustomDatePicker label='Select Date' />
       <Input
         name='full_name'
         type='text'
