@@ -36,7 +36,7 @@ const CustomDatePicker = ({ name, label, required = true }) => {
       />
 
       <DayPicker
-        className={`bg-white m-0 p-3 rounded-lg absolute z-30 top-12 left-[40%] -translate-x-[40%] ${
+        className={`bg-primary m-0 p-3 rounded-lg absolute z-30 top-20 left-[50%] -translate-x-[50%] ${
           isOpen ? 'scale-100' : 'scale-0'
         } origin-top duration-300`}
         mode='single'

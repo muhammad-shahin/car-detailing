@@ -36,18 +36,6 @@ const BookingForm = () => {
     },
     {
       name: 'carType',
-      id: 'luxury',
-      value: 'Luxury',
-      icon: luxuryCar,
-    },
-    {
-      name: 'carType',
-      id: 'cabriolet',
-      value: 'Cabriolet',
-      icon: cabrioletCar,
-    },
-    {
-      name: 'carType',
       id: 'limousine',
       value: 'Limousine',
       icon: limousineCar,
@@ -60,15 +48,9 @@ const BookingForm = () => {
     },
     {
       name: 'carType',
-      id: 'van',
-      value: 'Van',
-      icon: vanCar,
-    },
-    {
-      name: 'carType',
       id: 'rv',
       value: 'RV',
-      icon: rvCar,
+      icon: vanCar,
     },
     {
       name: 'carType',
@@ -84,15 +66,9 @@ const BookingForm = () => {
     },
     {
       name: 'carType',
-      id: 'boat',
-      value: 'Boat',
-      icon: boat,
-    },
-    {
-      name: 'carType',
       id: 'other',
       value: 'Other',
-      icon: aircraft,
+      icon: boat,
     },
   ];
   return (

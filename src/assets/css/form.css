@@ -11,7 +11,7 @@ select > option {
   @apply bg-primary text-white;
 }
 
-/* radio button */
+/* custom radio button styles start */
 
 .radio-button > input[type='radio'] {
   display: none;
@@ -35,3 +35,32 @@ select > option {
   top: 0;
   left: 0;
 }
+/* custom radio button styles end */
+
+/* custom date picker styles start */
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-caption-font-size: 18px;
+  --rdp-accent-color: var(--secondary) !important;
+  --rdp-background-color: var(--secondary) !important;
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 3px solid var(--rdp-accent-color);
+  --rdp-selected-color: #fff;
+  margin: 0 !important;
+}
+.rdp-cell,
+.rdp-head_cell {
+  color: white;
+}
+.rdp-caption {
+  color: var(--secondary);
+}
+.rdp-day_today {
+  color: var(--secondary) !important;
+}
+.rdp-day_today:hover {
+  color: white !important;
+}
+/* custom date picker styles end */
