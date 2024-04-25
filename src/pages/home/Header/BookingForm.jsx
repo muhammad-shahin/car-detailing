@@ -70,7 +70,7 @@ const BookingForm = () => {
   return (
     <form className='bg-secondary rounded-xl xl:p-8 p-6 flex flex-col gap-5'>
       <h3 className='heading-3 text-primary text-center pb-2'>
-        Book Now to get Discount!
+        Get Estimate Now!
       </h3>
       <CustomRadioGroup
         required={true}

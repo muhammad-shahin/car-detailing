@@ -5,7 +5,13 @@
   @apply text-4xl lg:text-5xl xl:text-6xl;
 }
 .heading-3 {
+  @apply text-3xl lg:text-4xl xl:text-5xl;
+}
+.heading-4 {
   @apply text-3xl lg:text-4xl;
+}
+.paragraph {
+  @apply text-neutral7 text-lg xl:max-w-[650px];
 }
 .paragraph-20 {
   @apply text-neutral3 text-lg lg:text-xl;

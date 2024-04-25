@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
 
       {/* main nav */}
-      <div className='py-5 w-full bg-neutral1 relative'>
+      <div className='py-3 w-full bg-neutral1 relative'>
         <div className='container-box mx-auto flex justify-between items-center'>
           {/* logo */}
           <div>

@@ -24,3 +24,15 @@
   @apply pb-[60px] lg:pb-[80px] xl:pb-[100px];
 }
 /* container & section styles end */
+
+/* utility & other common styles */
+.custom-box-shadow {
+  box-shadow: 8px 8px 10px var(--primary);
+}
+.custom-box-shadow-reverse {
+  box-shadow: -8px -8px 10px var(--primary);
+}
+
+.content-block {
+  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-7 xl:gap-20;
+}
