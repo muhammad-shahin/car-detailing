@@ -2,15 +2,11 @@ import Button from '@/components/common/Button';
 import CustomRadioGroup from '@/components/common/CustomRadioGroup';
 import Input from '@/components/common/Input';
 import SelectOption from '@/components/common/SelectOption';
-import Textarea from '@/components/common/Textarea';
 import {
-  aircraft,
-  cabrioletCar,
   boat,
   limousineCar,
   luxuryCar,
   pickupCar,
-  rvCar,
   sedanCar,
   sportCar,
   suvCar,
@@ -80,6 +76,7 @@ const BookingForm = () => {
         required={true}
         label='Car Type'
         groupItems={carType}
+        initialChecked='Sedan'
       />
       <SelectOption
         name='service'

@@ -1,11 +1,18 @@
+'use client';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const CustomRadioGroup = ({
   className,
   required = false,
   label,
   groupItems,
+  initialChecked,
 }) => {
+  const [selectedOption, setSelectedOption] = useState(initialChecked);
+  const handleRadioChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
   return (
     <div>
       {label && (
@@ -26,7 +33,10 @@ const CustomRadioGroup = ({
               value={type.value}
               id={type.id}
               required={required}
+              checked={selectedOption === type.value}
+              onChange={handleRadioChange}
             />
+
             <label
               for={type.id}
               className='block w-fit px-1 py-1 bg-white relative text-neutral6 rounded-lg outline-none'
