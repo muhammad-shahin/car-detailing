@@ -36,11 +36,11 @@ const ServiceCard2 = ({
       <div className='service-card-footer btn-group'>
         <Button
           text='Learn More'
-          className='secondary-btn uppercase'
+          className='secondary-btn uppercase w-full md:py-2'
         />
         <Button
           text='Schedule Online'
-          className='outline-btn uppercase'
+          className='outline-btn uppercase w-full md:py-2'
         />
       </div>
     </div>
