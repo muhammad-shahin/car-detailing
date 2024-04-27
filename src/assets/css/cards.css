@@ -1,8 +1,12 @@
 /* service card styles start */
 .service-card {
-  @apply bg-neutral8 bg-cover border-2 border-neutral8 w-fit p-6 rounded-lg relative overflow-hidden;
+  @apply flex flex-col justify-between bg-neutral8 p-4 sm:p-5 border-2 border-neutral4 rounded;
 }
-.service-card .icon-wrapper {
-  @apply w-[60px] h-[60px] p-3 flex justify-center items-center bg-white rounded-full mx-auto mb-8;
+.service-card-title {
+  @apply text-3xl text-white pb-2 tracking-wide;
 }
+.service-card-subtitle {
+  @apply block text-white text-base font-semibold uppercase tracking-widest pb-4;
+}
+
 /* service card styles end */

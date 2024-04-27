@@ -7,7 +7,6 @@ import {
   carCoating,
   coating,
 } from '@/assets/icons/index';
-import ServiceCard2 from '@/components/common/Cards/ServiceCard2';
 import { services } from '@/db/index';
 const OurServices = () => {
   return (
@@ -21,9 +20,9 @@ const OurServices = () => {
         descClassName='text-neutral3'
       />
       <div className='container-box'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:gap-10'>
           {services.map((service) => (
-            <ServiceCard2
+            <ServiceCard
               key={service.id}
               title={service.title}
               subTitle={service.subTitle}

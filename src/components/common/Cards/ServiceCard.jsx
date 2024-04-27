@@ -1,36 +1,47 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
-import detailingIcon from '@/assets/icons/interior-cleaning.svg';
 import Button from '../Button';
-import { IoMdAdd } from 'react-icons/io';
 
-const ServiceCard = ({ title, description, icon, bgImage }) => {
+const ServiceCard = ({
+  image,
+  price,
+  title,
+  subTitle,
+  description,
+  className,
+  imgClassName,
+}) => {
   return (
-    <div className='service-card bg-[url("https://i.postimg.cc/fWfNFhc1/car-exterior-cleaning-3.jpg")] image-overlay'>
-      <div className='relative'>
-        {/* service icon */}
-        <div className='icon-wrapper'>
-          <Image
-            src={detailingIcon}
-            alt='Service Icon'
-            className='w-full object-contain'
+    <div className={`service-card ${className}`}>
+      <div>
+        {/* card image */}
+        <div className='pb-5 md:pb-6'>
+          <img
+            src={image}
+            alt={title}
+            className={`rounded-md object-cover w-full h-[300px] ${imgClassName}`}
           />
         </div>
-        {/* service card body */}
-        <div className='text-center'>
-          <h4 className='heading-4 text-white pb-3'>Interior Cleaning</h4>
-          <p className='paragraph pb-6 text-neutral3 max-w-'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-            doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Fugiat, nemo!
+        {/* card body */}
+        <div className='service-card-body pb-5 md:pb-6'>
+          <p className='uppercase font-medium text-lg text-neutral4 tracking-widest pb-3'>
+            Starting At ${price}
           </p>
-          <Button
-            text='Book Now'
-            className='primary-btn mx-auto group'
-            iconRight={
-              <IoMdAdd className='text-xl group-hover:rotate-180 duration-300' />
-            }
-          />
+          <h3 className='service-card-title'>{title}</h3>
+          <span className='service-card-subtitle'>{subTitle}</span>
+          <p className='text-base text-white'>{description.slice(0, 150)}...</p>
         </div>
+      </div>
+
+      <div className='btn-group'>
+        <Button
+          text='Learn More'
+          className='secondary-btn uppercase w-full md:py-2 rounded'
+        />
+        <Button
+          text='Schedule Online'
+          className='outline-btn uppercase w-full md:py-2 rounded'
+        />
       </div>
     </div>
   );
