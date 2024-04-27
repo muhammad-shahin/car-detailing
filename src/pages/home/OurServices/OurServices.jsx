@@ -12,7 +12,7 @@ const OurServices = () => {
   return (
     <section className='section-gap-dark'>
       <SectionTitleBlock
-        title={'Car Detailing Services we provide'}
+        title={'Our Car Detailing Services'}
         description={
           'Explore our range of premium auto detailing services designed to make your vehicle shine.'
         }

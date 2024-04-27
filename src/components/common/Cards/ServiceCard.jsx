@@ -29,7 +29,7 @@ const ServiceCard = ({
           </p>
           <h3 className='service-card-title'>{title}</h3>
           <span className='service-card-subtitle'>{subTitle}</span>
-          <p className='text-base text-white'>{description.slice(0, 150)}...</p>
+          <p className='text-base text-white'>{description.slice(0, 160)}...</p>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const ServiceCard = ({
         />
         <Button
           text='Schedule Online'
-          className='outline-btn uppercase w-full md:py-2 rounded'
+          className='primary-btn uppercase w-full md:py-2 rounded'
         />
       </div>
     </div>

@@ -32,6 +32,7 @@ module.exports = {
       neutral6: '#2e3a35',
       neutral7: '#17241f',
       neutral8: '#375153',
+      neutral9: '#2B6151',
       slate: '#708090',
       gray: '#808080',
       black: '#000',

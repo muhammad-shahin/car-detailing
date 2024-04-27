@@ -1,6 +1,6 @@
 /* service card styles start */
 .service-card {
-  @apply flex flex-col justify-between bg-neutral8 p-4 sm:p-5 border-2 border-neutral4 rounded;
+  @apply flex flex-col justify-between bg-neutral9 p-4 sm:p-5 border-2 border-neutral4 rounded;
 }
 .service-card-title {
   @apply text-3xl text-white pb-2 tracking-wide;

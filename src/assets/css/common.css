@@ -5,8 +5,11 @@
 .secondary-btn {
   @apply min-w-36 border lg:border-2 border-secondary rounded-lg text-white text-center text-lg px-4 md:px-5 lg:px-6 py-2 md:py-3 hover:bg-secondaryLight hover:border-secondaryLight duration-200 flex justify-center items-center gap-2;
 }
-.outline-btn {
+.secondary-outline-btn {
   @apply min-w-36 border lg:border-2 border-secondary rounded-lg text-white text-center text-lg px-4 md:px-5 lg:px-6 py-2 md:py-3 hover:bg-secondary hover:border-secondary duration-200 flex justify-center items-center gap-2;
+}
+.primary-outline-btn {
+  @apply min-w-36 border lg:border-2 border-primary rounded-lg text-white text-center text-lg px-4 md:px-5 lg:px-6 py-2 md:py-3 hover:bg-primary hover:border-primary duration-200 flex justify-center items-center gap-2;
 }
 .btn-group {
   @apply flex items-center gap-6;
