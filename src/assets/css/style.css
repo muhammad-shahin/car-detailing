@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('./common.css');
+@import url('./cards.css');
 @import url('./header.css');
 @import url('./reset.css');
 @import url('./typography.css');
@@ -20,6 +21,7 @@
   --neutral5: theme(colors.neutral5);
   --neutral6: theme(colors.neutral6);
   --neutral7: theme(colors.neutral7);
+  --neutral8: theme(colors.neutral8);
   --slate: theme(colors.slate);
   --gray: theme(colors.gray);
 }

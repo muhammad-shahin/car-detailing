@@ -11,7 +11,7 @@ const Header = () => {
             <h1 className='heading-1 pb-4 text-white lg:leading-tight max-w-[750px]'>
               Best Car Detailing in Arlington, TX
             </h1>
-            <p className='paragraph-20 max-w-[600px]'>
+            <p className='paragraph-20 pb-4 max-w-[600px]'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
               illum voluptate porro excepturi in. Beatae nisi nulla fuga fugiat
               eos rem nostrum voluptas nobis sed veritatis, quaerat ut velit

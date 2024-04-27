@@ -5,8 +5,11 @@
 .secondary-btn {
   @apply min-w-36 border lg:border-2 border-secondary rounded-lg text-white text-center text-lg px-4 md:px-5 lg:px-6 py-2 md:py-3 hover:bg-secondaryLight hover:border-secondaryLight duration-200 flex justify-center items-center gap-2;
 }
+.outline-btn {
+  @apply min-w-36 border lg:border-2 border-secondary rounded-lg text-white text-center text-lg px-4 md:px-5 lg:px-6 py-2 md:py-3 hover:bg-secondary hover:border-secondary duration-200 flex justify-center items-center gap-2;
+}
 .btn-group {
-  @apply flex items-center gap-6 pt-6;
+  @apply flex items-center gap-6;
 }
 /* buttons styles end */
 
@@ -16,6 +19,9 @@
 }
 .section-gap {
   @apply py-[60px] lg:py-[80px] xl:py-[100px];
+}
+.section-gap-dark {
+  @apply bg-secondary py-[60px] lg:py-[70px] xl:py-[80px];
 }
 .section-gap-top {
   @apply pt-[60px] lg:pt-[80px] xl:pt-[100px];
@@ -35,4 +41,16 @@
 
 .content-block {
   @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-7 xl:gap-20;
+}
+
+.image-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.75;
+  /* z-index: 200; */
 }

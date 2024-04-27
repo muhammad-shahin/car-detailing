@@ -15,7 +15,7 @@ const AboutCompany = () => {
   return (
     <section className='container-box section-gap'>
       <SectionTitleBlock
-        title={'Experience Superior Car Detailing in Arlington, Texas'}
+        title={'Auto Detailing in Arlington, Texas'}
         description={
           'Experience superior car detailing services in Arlington, Texas. Elevate your vehicle with our unmatched expertise.'
         }

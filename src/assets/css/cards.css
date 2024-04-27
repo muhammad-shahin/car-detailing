@@ -1,0 +1,8 @@
+/* service card styles start */
+.service-card {
+  @apply bg-neutral8 bg-cover border-2 border-neutral8 w-fit p-6 rounded-lg relative overflow-hidden;
+}
+.service-card .icon-wrapper {
+  @apply w-[60px] h-[60px] p-3 flex justify-center items-center bg-white rounded-full mx-auto mb-8;
+}
+/* service card styles end */

@@ -8,7 +8,7 @@
   @apply text-3xl lg:text-4xl xl:text-5xl;
 }
 .heading-4 {
-  @apply text-3xl lg:text-4xl;
+  @apply lg:text-3xl;
 }
 .paragraph {
   @apply text-neutral7 text-lg xl:max-w-[650px];
