@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '/public/images/arlington-car-detail.png';
 import { MdCall } from 'react-icons/md';
-import navItems from '@/db/navItems.json';
+import { navItems } from '@/db/index';
 import NavItemsMobile from './NavItemsMobile';
 import NavItemsDesktop from './NavItemsDesktop';
 

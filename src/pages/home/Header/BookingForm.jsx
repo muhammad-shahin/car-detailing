@@ -2,71 +2,10 @@ import Button from '@/components/common/Button';
 import CustomRadioGroup from '@/components/common/CustomRadioGroup';
 import Input from '@/components/common/Input';
 import SelectOption from '@/components/common/SelectOption';
-import {
-  boat,
-  limousineCar,
-  luxuryCar,
-  pickupCar,
-  sedanCar,
-  sportCar,
-  suvCar,
-  truckCar,
-  vanCar,
-} from '@/assets/icons/index';
 import CustomDatePicker from '@/components/common/CustomDatePicker';
+import { carType } from '@/db/index';
 
 const BookingForm = () => {
-  const carType = [
-    {
-      name: 'carType',
-      id: 'sedan',
-      value: 'Sedan',
-      checked: true,
-      icon: sedanCar,
-    },
-    {
-      name: 'carType',
-      id: 'sport',
-      value: 'Sport',
-      icon: sportCar,
-    },
-    {
-      name: 'carType',
-      id: 'limousine',
-      value: 'Limousine',
-      icon: limousineCar,
-    },
-    {
-      name: 'carType',
-      id: 'suv',
-      value: 'SUV',
-      icon: suvCar,
-    },
-    {
-      name: 'carType',
-      id: 'rv',
-      value: 'RV',
-      icon: vanCar,
-    },
-    {
-      name: 'carType',
-      id: 'pickup',
-      value: 'Pickup',
-      icon: pickupCar,
-    },
-    {
-      name: 'carType',
-      id: 'truck',
-      value: 'Truck',
-      icon: truckCar,
-    },
-    {
-      name: 'carType',
-      id: 'other',
-      value: 'Other',
-      icon: boat,
-    },
-  ];
   return (
     <form className='bg-secondary rounded-xl xl:p-8 p-6 flex flex-col gap-5'>
       <h3 className='heading-3 text-primary text-center pb-2'>
@@ -107,15 +46,6 @@ const BookingForm = () => {
         label='Phone Number'
         required={true}
       />
-
-      {/* <Textarea
-        name='message'
-        placeholder='Tell us more about your detailing...'
-        label='Leave a Message'
-        defaultOption={'Select Service'}
-        cols='30'
-        rows='5'
-      ></Textarea> */}
       <Button
         text={'Book Now'}
         type='submit'
